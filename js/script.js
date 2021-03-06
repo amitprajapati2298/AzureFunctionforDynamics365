@@ -19,6 +19,7 @@ $('.btn-send').click(function(){
     type: "POST",
     url: AzureFunctionURL,
     data: payload,
+    dataType: "json",
     headers:{
       "Content-Type":"application/json",
       "Access-Control-Allow-Origin":"*",
