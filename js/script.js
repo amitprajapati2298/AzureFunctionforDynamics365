@@ -20,13 +20,14 @@ $('.btn-send').click(function(){
     url: AzureFunctionURL,
     data: payload,
     headers:{
-      "Access-Control-Allow-Origin":"*"
+      "Content-Type":"application/json",
+      "Access-Control-Allow-Origin":"*",
     },
     success: function(data){
-      console.log(data);
+      alert(data);
     },
     error:function(data){
-      console.log(data);
+      alert(data);
     }
   });
 })
