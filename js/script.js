@@ -14,7 +14,7 @@ $('.btn-send').click(function(){
     'subject':subject,
     'message':message
   };
-  const AzureFunctionURL = "http://localhost:7071/api/SendResponse";
+  const AzureFunctionURL = "https://crmazurefunction.azurewebsites.net/api/SendResponse";
   $.ajax({
     type: "POST",
     url: AzureFunctionURL,
