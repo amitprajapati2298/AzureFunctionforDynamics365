@@ -19,6 +19,9 @@ $('.btn-send').click(function(){
     type: "POST",
     url: AzureFunctionURL,
     data: payload,
+    headers:{
+      "Access-Control-Allow-Origin":"*"
+    },
     success: function(data){
       console.log(data);
     },
