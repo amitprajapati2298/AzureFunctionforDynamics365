@@ -60,10 +60,15 @@ $('.btn-send').click(function() {
                       onOpen: () => {
                           Swal.hideLoading();
                       },
-                      showConfirmButton: false,
+                      confirmButtonText: "Submit Another Response",
+                      footer:"Thank you for submmiting Case",
+                      allowOutsideClick: false
+                  }).then(function(result){
+                    if(result.value){
+                      location.reload();
+                    }
                   });
               }
-              location.reload();
           },
           error: function(data) {
               //If any error while processing the data
@@ -71,13 +76,16 @@ $('.btn-send').click(function() {
                   title: "Error",
                   icon: "error",
                   text: "Azure Function: Internal Server Error",
-                  footer: "<a href='https://www.linkedin.com/in/amitprajapati22/'>Contact Admin</a>",
                   onOpen: () => {
                       Swal.hideLoading();
                   },
-                  showConfirmButton: false,
+                  confirmButtonText: "Contact Admin",
+                  allowOutsideClick: false,
+              }).then(function(result){
+                if(result.value){
+                  location.replace("https://www.linkedin.com/in/amitprajapati22/");
+                }
               });
-              location.reload();
           }
       });
   }else{
