@@ -14,21 +14,18 @@ $('.btn-send').click(function(){
     'subject':subject,
     'message':message
   };
-  const AzureFunctionURL = "https://crmazurefunction.azurewebsites.net/api/SendResponse";
+  const AzureFunctionURL = "http://localhost:7071/api/SendResponse";
   $.ajax({
     type: "POST",
     url: AzureFunctionURL,
-    data: payload,
-    dataType: "json",
-    headers:{
-      "Content-Type":"application/json",
-      "Access-Control-Allow-Origin":"*",
-    },
+    data: JSON.stringify(payload),
     success: function(data){
-      alert(data);
+      if(data.StatusCode == 200){
+        alert("Message Posted to Dynamics")
+      }
     },
     error:function(data){
-      alert(data);
+      alert("Azure Function Internal Server Error");
     }
   });
 })
