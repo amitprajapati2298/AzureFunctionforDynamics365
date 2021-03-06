@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.314" y1="0.342" x2="-0.162" y2="-0.079" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3498db"/>
+      <stop offset="1" stop-color="#34495e"/>
+    </linearGradient>
+    <filter id="Space_bg" x="-128.98" y="-47.45" width="1037.399" height="1187.623" filterUnits="userSpaceOnUse">
+      <feOffset dx="-10" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur"/>
+      <feFlood flood-color="#08dacd" flood-opacity="0.231"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#34495e"/>
+      <stop offset="1" stop-color="#3498db"/>
+    </linearGradient>
+    <filter id="Space_bg-2" x="-70.042" y="-47.071" width="1179.2" height="979.01" filterUnits="userSpaceOnUse">
+      <feOffset dx="-10" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur-2"/>
+      <feFlood flood-color="#08dacd" flood-opacity="0.231"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="A" x="-22.79" y="-79.583" width="845" height="1229" filterUnits="userSpaceOnUse">
+      <feOffset dy="50" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur-3"/>
+      <feFlood flood-color="#50046d" flood-opacity="0.259"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-custom_1">
+      <rect width="1000" height="1000"/>
+    </clipPath>
+  </defs>
+  <g id="custom_1" data-name="custom – 1" clip-path="url(#clip-custom_1)">
+    <rect width="1000" height="1000" fill="#fff"/>
+    <g id="Group_3" data-name="Group 3" transform="translate(4 9)">
+      <g transform="matrix(1, 0, 0, 1, -4, -9)" filter="url(#Space_bg)">
+        <path id="Space_bg-3" data-name="Space bg" d="M1024.3,181.135c-163.869-70.809-416.105-92.11-460.848,11.514s82.214,500.271,246.084,571.08,522.928-122.621,565.993-198.036S1188.169,251.945,1024.3,181.135Z" transform="matrix(0.1, -0.99, 0.99, 0.1, -149.19, 1451.59)" fill="url(#linear-gradient)"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -4, -9)" filter="url(#Space_bg-2)">
+        <path id="Space_bg-4" data-name="Space bg" d="M1056.023,183.35c-174.932-73.436-444.2-95.526-491.959,11.941s87.764,518.826,262.7,592.261,558.23-127.169,604.2-205.381S1230.955,256.786,1056.023,183.35Z" transform="translate(-465.93 -30)" fill="url(#linear-gradient-2)"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -4, -9)" filter="url(#A)">
+        <text id="A-2" data-name="A" transform="translate(125.71 758.92)" fill="#fff" font-size="764" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">A</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

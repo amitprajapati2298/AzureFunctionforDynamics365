@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <!-- Primary Meta Tags -->
+      <title>Azure Function Demo</title>
+        <meta name="title" content="Azure Function Demo by Amit Prajapati" />
+        <meta name="description" content="Hi, I am Software Engineer from Mumbai, India" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://amitprajapati.vercel.app/" />
+        <meta property="og:title" content="Amit Prajapati" />
+        <meta property="og:description" content="Hi, I am Software Engineer from Mumbai, India" />
+        <meta property="og:image" content="/img/profile_photo.jpg" />
+
+        <meta name="keywords" content="amit prajapati,cloudfronts, mumbai, software developer, engineer, dynamic microsoft,365 dynamics,crm dynamics microsoft,dynamic 365 microsoft,">
+
+      <meta property="twitter:card" content="summary_large_image">
+      <meta property="twitter:url" content="http://amitprajapati.vercel.app/">
+      <meta property="twitter:title" content="Azure Function Demo">
+      <meta property="twitter:description" content="Hi, I m Software Engineer from Mumbai, India">
+      <meta property="twitter:image" content="http://amitprajapati.vercel.app/img/profile_photo.jpg">
+      <title>Amit Prajapati</title>
+      <link rel="stylesheet" href="vendor/boostrap/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/global-style.css" />
+      <link
+         rel="stylesheet"
+         href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+         />
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg  fixed-top custom-navbar" style="background-color:white">
+         <a class="navbar-brand" href="#"
+            ><img src="img/logo.svg" alt="" class="img-fluid my-brand-logo" />
+         </a>
+         <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="http://amitprajapati.vercel.app/">My Website</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <section class="hero-section" id="hero-section">
+         <div class="container">
+            <div class="row text-center">
+               <div class="col-lg-12 col-sm-12">
+                  <img src="img/functions-logo-512x350.png" alt="" class="img-fluid profile-img"> 
+               </div>
+               <div class="col-lg-12 col-sm-12 profile-container">
+                  <div class="profile">
+                     <div class="profile-header p-2">
+                        Azure Function + Dynamics 365 CRM
+                     </div>
+                     <div class="profile-subheader p-2">
+                       Contact Us Demo
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-3">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card contact-me-card">
+                                    <div class="form m-lg-3 p-sm-1 m-sm-1">
+                                       <form method="post" id="form-box" class=" delay-300ms">
+                                        <div class="form-group input-group">
+                                            <div class="input-group-prepend">
+                                               <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                            </div>
+                                            <input type="text" id="contact-first-name" name="first-name" class="form-control" placeholder="Enter your First Name" required>
+                                         </div>
+                                         <div class="form-group input-group">
+                                            <div class="input-group-prepend">
+                                               <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                            </div>
+                                            <input type="text" id="contact-last-name" name="last-name" class="form-control" placeholder="Enter your name Last Name" required>
+                                         </div>
+                                       <div class="form-group input-group">
+                                          <div class="input-group-prepend">
+                                             <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                          </div>
+                                          <input type="text" id="contact-company-name" name="company-name" class="form-control" placeholder="Enter your Company name" required>
+                                       </div>
+                                       <div class="form-group input-group">
+                                          <div class="input-group-prepend">
+                                             <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                          </div>
+                                          <input type="email" id="contact-email" name="email" class="form-control" placeholder="Enter your email" required>
+                                       </div>
+                                       <div class="form-group input-group">
+                                          <div class="input-group-prepend">
+                                             <span class="input-group-text"><i class="fas fa-at"></i></span>
+                                          </div>
+                                          <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="Enter subject" required>
+                                       </div>
+                                       <div class="form-group input-group">
+                                          <div class="input-group-prepend">
+                                             <span class="input-group-text"><i class="fas fa-comment-alt"></i></span>
+                                          </div>
+                                          <textarea name="msg" id="contact-msg" class="form-control" placeholder="Write your message" required></textarea>
+                                       </div>
+                                       <div class="form-group">
+                                          <input type="button" name="submit" id="submit" class="btn btn-primary btn-block btn-send" value="Send">
+                                       </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+               </div>
+            </div>
+        </div>
+      </section>
+      <section class="footer-section">
+         <img src="img/hero-section-bottom.svg" alt="" class="hero-section-footer-img" style="-webkit-transform: scaleY(-1) !important;
+            transform: scaleY(-1) !important;width:100%; margin-top:-2px">
+        <div class="small text-center" style="padding:10px; color: white; text-decoration: none;">
+            All Rights Reserved | Design &amp; Developed with ❤ by <a style="color: white; text-decoration: none;" href="https://www.linkedin.com/in/amitprajapati22/">Amit Prajapati</a>
+         </div>
+      </section>
+      <script src="vendor/boostrap/js/jquery-3.3.1.slim.min.js"></script>
+      <script src="vendor/boostrap/js/popper.min.js"></script>
+      <script src="vendor/boostrap/js/bootstrap.min.js"></script>
+      <script src="vendor/sweetAlert/index.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>

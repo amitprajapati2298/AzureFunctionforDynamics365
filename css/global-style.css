@@ -1,0 +1,184 @@
+/*  --  Global Varibales  --  */
+:root {
+  --theme-color-1: #3498db;
+  --theme-color-2: #3498db;
+  --theme-color-1-30op: #3498db30;
+  --theme-color-dark: #34495e;
+  --theme-color-dark-20: #34495e20;
+  --box-shadow-color-1: rgba(0, 128, 255, 0.15);
+  --box-shadow-color-2: rgba(0, 128, 255, 0.15);
+  --card-box-shadow-1: 0px 10px 20px -10px var(--box-shadow-color-1);
+  --card-box-shadow-2: 0px 10px 20px -10px var(--box-shadow-color-2);
+  --card-box-shadow-3: 0px 54px 80px -19px rgba(0, 249, 229, 0.04);
+  --login-btn-box-shadow: 0px 10px 20px -10px var(--box-shadow-color-1);
+  --footer-bg-color: #191b1b;
+  --section-height: 600px;
+  --gradient-bg: linear-gradient(
+    270deg,
+    var(--theme-color-1) 0%,
+    var(--theme-color-2) 100%
+  );
+  --gradient-bg2: linear-gradient(
+    270deg,
+    var(--theme-color-dark) 100%,
+    var(--theme-color-2) 100%
+  );
+  --gradient-bg-white: linear-gradient(270deg, white 0%, white 100%);
+  --font-size-xxsmall: 10px;
+  --font-size-xsmall: 12px;
+	--font-size-small: 14px;
+	--font-size-xmedium: 16px;
+	--font-size-medium: 18px;
+	--font-size-large: 24px;
+	--font-size-xlarge: 36px;
+	--font-size-xxlarge: 48px;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+/*  --  Brand Fonts  --  */
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("../vendor/fonts/Montserrat-Regular.otf");
+}
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url("../vendor/fonts/Montserrat-SemiBold.otf");
+}
+@font-face {
+  font-family: MontserratAlternates-Regular;
+  src: url("../vendor/fonts/MontserratAlternates-Regular.otf");
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("../vendor/fonts/Montserrat-Bold.otf");
+}
+* {
+  font-family: Montserrat-Regular;
+}
+/*  --  Theme  --  */
+.section-header {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.section-footer-img {
+  background-size: cover;
+  background-position: center top;
+  bottom: 0;
+  width: 100% !important;
+
+  z-index: 10;
+}
+/*  --  Brand and NavBar  --  */
+.my-brand-logo {
+  height: 40px;
+  width: auto;
+}
+
+.custom-navbar {
+  box-shadow: var(--card-box-shadow-1);
+  background-color: white !important;
+}
+
+.navbar-toggler-icon {
+  color: var(--theme-color-1);
+}
+.nav-link {
+  font-size: 12px;
+}
+.nav-item.active > a {
+  color: white;
+  background-image: var(--gradient-bg);
+  padding: 5px 15px !important;
+  vertical-align: middle;
+  border-radius: 150px;
+  font-weight: 700;
+  -webkit-box-shadow: var(--login-btn-box-shadow);
+  -moz-box-shadow: var(--login-btn-box-shadow);
+  box-shadow: var(--login-btn-box-shadow);
+}
+
+/*  -- Hero Section --  */
+.hero-section {
+  margin: 20px auto 90px auto;
+  padding-top: 80px;
+}
+.profile-container {
+  margin: auto !important;
+}
+.profile-img {
+  height: 120px;
+  width: auto;
+}
+.profile-header {
+  color: var(--theme-color-dark);
+  font-size: var(--font-size-large);
+  font-family: Montserrat-Bold;
+}
+.profile-subheader {
+  color: var(--theme-color-dark);
+  font-size: var(--font-size-medium);
+  font-weight: 600;
+}
+.my-reach-me-section-header > h2 {
+  color: var(--theme-color-1);
+  font-size: var(--font-size-xxlarge);
+  font-family: Montserrat-SemiBold;
+}
+.my-reach-me-section-hr {
+  border: 1px solid var(--theme-color-1-30op);
+  background-color: var(--theme-color-1-30op);
+  width: 150px;
+}
+/*  --  Contact Me   --  */
+.contact-me-card {
+  font-size: 12px;
+  line-height: 1.6em;
+  border-radius: 5px 5px 5px 5px;
+  overflow: hidden;
+  padding-top: 20px !important;
+  padding-right: 20px !important;
+  padding-bottom: 20px !important;
+  padding-left: 20px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  box-shadow: var(--card-box-shadow-1);
+  border: 0px;
+  box-shadow: var(--card-box-shadow-2);
+}
+.form-group {
+  margin-top: 10px;
+}
+.form-group > .form-control {
+  border-radius: 5px;
+  border: 2px solid var(--theme-color-dark-20);
+  font-size: 14px;
+}
+.form-group > .input-group-prepend > .input-group-text {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 15px;
+  color:var(--theme-color-dark);
+  border: 2px solid var(--theme-color-dark-20);
+}
+.form-group > .btn-send {
+  margin-top: 50px;
+  background-color: var(--theme-color-dark);
+  color: white;
+}
+.connect-with-me {
+  border-left: 10px solid white;
+  padding-left: 20px;
+  color: white;
+  font-size: 24px;
+  margin: 10px 0px 20px 0px;
+}
+
+/*  --  Footer Section  --*/
+.footer-section {
+  color: white;
+  background-color: var(--theme-color-dark);
+  font-weight: 400;
+}
