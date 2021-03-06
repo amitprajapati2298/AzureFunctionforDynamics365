@@ -1,5 +1,4 @@
 $('.btn-send').click(function(){
-  debugger;
   var firstname = $('#contact-first-name').val();
   var lastname = $('#contact-last-name').val();
   var companyname = $('#contact-company-name').val();
