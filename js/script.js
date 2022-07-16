@@ -43,7 +43,7 @@ $('.btn-send').click(function() {
       };
 
       //Declaring the Azure Function URL in costant
-      const AzureFunctionURL = "https://crmcontactusintegration.azurewebsites.net/api/ProcessContactInfo";
+      const AzureFunctionURL = "https://crmcontactusintegration.azurewebsites.net/api/ProcessContactInfo?code=KGOOEU2xUpykD8gUb30pTtjELrI1GxxUtcZkWSWWWp3je/lqwaOIZQ==";
 
       //Creating Ajax Request to post data to Dynamics 365
       $.ajax({
