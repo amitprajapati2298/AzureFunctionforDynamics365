@@ -43,7 +43,7 @@ $('.btn-send').click(function() {
       };
 
       //Declaring the Azure Function URL in costant
-      const AzureFunctionURL = "https://globalpowerplatformbootcamp2023.azurewebsites.net/api/Function1";
+      const AzureFunctionURL = "https://globalpowerplatformbootcamp2023.azurewebsites.net/api/Function1?code=RdNa5NoQcMmJJ0bwEBhehb1IkFV7PQaVshOnnKlYwhyEchycxs7vYA==";
 
       //Creating Ajax Request to post data to Dynamics 365
       $.ajax({
